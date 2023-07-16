@@ -496,12 +496,12 @@
 <p>下载和安装过程都十分的简单，这里我们就不再赘述。安装好后，我们就正式开始！</p>
 <h2 id="三-Github配置"><a href="#三-Github配置" class="headerlink" title="三.Github配置"></a>三.Github配置</h2><h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><p>我们可以新建一个仓库或者使用已经有的库也可以。那么我新建一个库叫做 picgo。<img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161921527.png" alt="img"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161931895.png"></p>
-<h3 id="创建Token"><a href="#创建Token" class="headerlink" title="创建Token"></a>创建Token</h3><p>创建好后，需要在 GitHub 上生成一个 token 以便 PicGo 来操作我们的仓库，来到个人中心，选择 Developer settings 就能看到 Personal access tokens_，我们在这里创建需要的 _token</p>
-<p>1.点击settings</p>
+<h3 id="创建Token"><a href="#创建Token" class="headerlink" title="创建Token"></a>创建Token</h3><p>创建好后，需要在 <strong>GitHub 上生成一个 token 以便 PicGo 来操作我们的仓库</strong>，来到个人中心，选择 Developer settings 就能看到 Personal access tokens_，我们在这里创建需要的 _token</p>
+<p>1.点击&#x3D;&#x3D;settings&#x3D;&#x3D;</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161939552.png" alt="屏幕截图(139)"></p>
-<p>2.点击Developer settings(开发者设置)</p>
+<p>2.点击&#x3D;&#x3D;Developer settings&#x3D;&#x3D;(开发者设置)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161939664.png" alt="屏幕截图(141)"></p>
-<p>3.点击Personal access tokens中的Tokens(classic),再点击Generate new token(classic)</p>
+<p>3.点击&#x3D;&#x3D;Personal access tokens&#x3D;&#x3D;中的&#x3D;&#x3D;Tokens(classic)&#x3D;&#x3D;,再点击&#x3D;&#x3D;Generate new token(classic)&#x3D;&#x3D;</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161943855.jpg" alt="屏幕截图(132)"></p>
 <p>4.&#x3D;&#x3D;选择 repo&#x3D;&#x3D;，同时它会把包含其中的都会勾选上，我们勾选这些就可以了。&#x3D;&#x3D;然后拉到最下方点击绿色按钮，Generate token 即可&#x3D;&#x3D;。之后就会生成一个 token ，&#x3D;&#x3D;记得复制保存到其他地方，这个 token 只显示一次！&#x3D;&#x3D;</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162002848.png" alt="屏幕截图(143)"></p>
@@ -512,21 +512,21 @@
 <blockquote>
 <p>这里的域名采用的cdn加速，本应是<a href="https://raw.githubusercontent.com/[username]/[%E4%BB%93%E5%BA%93%E5%90%8D]">https://raw.githubusercontent.com/[username]/[仓库名]</a><br>可以直接复制上面的自定义域名，一般情况下没问题，如果出现问题就采用原本的域名，网络问题自己解决</p>
 </blockquote>
-<h2 id="五-建议和一些错误"><a href="#五-建议和一些错误" class="headerlink" title="五.建议和一些错误"></a>五.建议和一些错误</h2><p>建议打开设置里的按照时间戳重命名，防止图片名字重复可能导致的一些失败。顺便提供一些常见错误的解决办法。</p>
+<h2 id="五-建议和一些错误"><a href="#五-建议和一些错误" class="headerlink" title="五.建议和一些错误"></a>五.建议和一些错误</h2><p>建议&#x3D;&#x3D;打开设置里的<strong>按照时间戳重命名</strong>&#x3D;&#x3D;，防止图片名字重复可能导致的一些失败。顺便提供一些常见错误的解决办法。</p>
 <h3 id="错误：Failed-to-fetch"><a href="#错误：Failed-to-fetch" class="headerlink" title="错误：Failed to fetch"></a>错误：Failed to fetch</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162032275.png" alt="10001 (1)"></p>
-<p>这个错误一般是由端口设置错误造成的，打开 picgo 的 log 文件</p>
+<p>这个错误一般是由&#x3D;&#x3D;端口设置错误&#x3D;&#x3D;造成的，打开 picgo 的 log 文件</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162033842.png"></p>
 <p>解决办法：打开 picgo 设置，点击设置代理选项，将端口改为 36677 端口，这是 picgo 推荐的默认端口号，然后保存，成功。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162034145.png"></p>
 <p>不过有的时候，设置好了后还是会报错 Failed to fetch，打开端口设置一看，端口变成了 366771，这是因为如果你打开了多个 picgo 程序，就会端口冲突，picgo 自动帮你把 36677 端口改为 366771 端口，导致错误。log 文件里也写得很清楚。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162035514.png"></p>
 <p>解决办法：先把 picgo 中的端口设置改回 36677，然后退出所有 picgo 程序，再使用 typora 上传功能（会自动启动 picgo 程序）<img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162035798.png"></p>
-<h3 id="错误：-“success”-false"><a href="#错误：-“success”-false" class="headerlink" title="错误：{“success”,false}"></a>错误：{“success”,false}</h3><p>这个错误是最常遇到的，第一个原因是文件名冲突了，如果你上传过一张 image1.jpg 的图片，再上传名称一样的图片就会失败。</p>
+<h3 id="错误：-“success”-false"><a href="#错误：-“success”-false" class="headerlink" title="错误：{“success”,false}"></a>错误：{“success”,false}</h3><p>这个错误是最常遇到的，第一个原因是&#x3D;&#x3D;文件名冲突&#x3D;&#x3D;了，如果你上传过一张 image1.jpg 的图片，再上传名称一样的图片就会失败。</p>
 <p>解决办法：打开 picgo 设置，将上传前重命名和时间戳重命名都打开。如图所示：</p>
 <p>再次上传文件，出现一个确认文件名称的对话框（暂时没有找到默认确定的选项），点击确定，上传成功。</p>
-<p>第二个原因，可能就是网络问题，显示服务端错误，这种情况下，可以更换默认图床，或者稍后再试。</p>
+<p>第二个原因，可能就是&#x3D;&#x3D;网络问题，显示服务端错误&#x3D;&#x3D;，这种情况下，可以更换默认图床，或者稍后再试。</p>
 <p>解决办法：更换默认图床或者多试几次，我经常遇到这种情况，在 github 上传失败的时候，我就把默认图床更改为 Gitee 上传到码云。</p>
-<p>第三个原因：使用了代理或者加速器</p>
+<p>第三个原因：&#x3D;&#x3D;使用了代理或者加速器&#x3D;&#x3D;</p>
 <h2 id="配置Typora"><a href="#配置Typora" class="headerlink" title="配置Typora"></a>配置Typora</h2><h3 id="打开Typora的设置"><a href="#打开Typora的设置" class="headerlink" title="打开Typora的设置"></a>打开Typora的设置</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162041744.png" alt="15dcdaa70f6e4fc69015f4f52cf30163"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162039586.png" alt="在这里插入图片描述"><br>配置完成后验证图片上传选项，如果看见<code>Failed to fetch</code>，别着急还有一个配置<br><img src="https://img-blog.csdnimg.cn/b37057b45dba48b7b25c4f792ca63706.png" alt="在这里插入图片描述"></p>
 <h3 id="设置picgo的监听端口号"><a href="#设置picgo的监听端口号" class="headerlink" title="设置picgo的监听端口号"></a>设置picgo的监听端口号</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162039515.png" alt="在这里插入图片描述">设置成36677，再去typora验证一下</p>
@@ -536,7 +536,7 @@
         <category>博客优化</category>
       </categories>
       <tags>
-        <tag>博客</tag>
+        <tag>小技能</tag>
       </tags>
   </entry>
   <entry>
