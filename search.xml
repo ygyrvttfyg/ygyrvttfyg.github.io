@@ -377,12 +377,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test4</title>
-    <url>/undefined/%2052089/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>!!! note Hexo-admonition 插件使用示例 这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。 提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。<br>!!! Warning “”<br>    这是一条不带标题的警告信息。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站</title>
     <url>/undefined/%2026986/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="从零开始免费搭建自己的博客-二-——基于-GitHub-pages-建站"><a href="#从零开始免费搭建自己的博客-二-——基于-GitHub-pages-建站" class="headerlink" title="从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站"></a><strong>从零开始免费搭建自己的博客(二)——基于 GitHub pages 建站</strong></h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>在第一篇文章里，我们利用 Hexo 框架在本地搭建了一个精美的博客，可是只能本地访问，要想发布到互联网上，还需要将它部署在网站上。</p>
@@ -478,5 +472,77 @@
       <tags>
         <tag>小技能</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>PicGo+GitHub 快速实现 markdown 图床</title>
+    <url>/undefined/%202/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="PicGo-GitHub-快速实现-markdown-图床"><a href="#PicGo-GitHub-快速实现-markdown-图床" class="headerlink" title="PicGo+GitHub 快速实现 markdown 图床"></a>PicGo+GitHub 快速实现 markdown 图床</h1><p>[TOC]</p>
+<h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一.前言"></a>一.前言</h2><p>Tpyora 是一款优雅的 MarkDown 编辑器，也推荐给大家，至于安装和配置，也十分的简单，就和安装普通的应用程序一样。</p>
+<p>&#x3D;&#x3D;md文档是<strong>纯文字文档</strong>，不能直接写入图片，视频等文件，只能<strong>通过链接的形式来引入图片，视频等非文字文件</strong>&#x3D;&#x3D;</p>
+<p>在编写md(markdown)文档和记笔记的时候，都需要插入很多图片，通常情况下这些图片（截图）都是保存在本地的，当你分享文档或者你在本地编写的文档放到在线博客的时候就会出现图片丢失的问题，不然就得一张一张全部复制，体验极差，所以我想找一个图床来托管我的图片。</p>
+<blockquote>
+<p>图床：</p>
+<p>图床简单来说就是一个便于在博文中插入在线图片连接的个人图片仓库。设置图床之后，在自己博客中插入的图片链接就可以随时随地在线预览了，并且不会因为任何意外原因无法查看，除非自己亲自删除。</p>
+<p>图床工具：</p>
+<p>所谓图床工具，就是自动把本地图片转换成链接的一款工具，网络上有很多图床工具，就目前使用种类而言，PicGo 算得上一款比较优秀的图床工具。它是一款用 Electron-vue 开发的软件，可以支持微博，七牛云，腾讯云 COS，又拍云，GitHub，阿里云 OSS，SM.MS，imgur 等 8 种常用图床，功能强大，简单易用。这里我们使用 PicGo。</p>
+</blockquote>
+<p>大多数推荐的七牛云，腾讯云，微博等等，一方面需要各种注册收费，另一方面十分不稳定，既然大家都会有自己的 GitHub 仓库，不如专门开一个仓库做自己的图床好了，既方便又简单。</p>
+<h2 id="二-准备工作"><a href="#二-准备工作" class="headerlink" title="二.准备工作"></a>二.准备工作</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p> 当然我还是在 &#x3D;&#x3D;windows 环境&#x3D;&#x3D;下来进行安装。&#x3D;&#x3D;本文以PicGo软件为例。&#x3D;&#x3D;</p>
+<p>如果你要使用 PicGo 的插件，还需要电脑安装 node 环境，因为 PicGo 的插件是用 npm 包管理工具进行安装的。</p>
+<h3 id="下载软件和安装"><a href="#下载软件和安装" class="headerlink" title="下载软件和安装"></a>下载软件和安装</h3><p>Typora：你可以点击 <a href="https://molunerfinn.com/PicGo/">这里</a>进行下载。</p>
+<p>PIcGo：你可以点击 <a href="https://molunerfinn.com/PicGo/">这里</a> 进行下载。</p>
+<p>[^注]: mac 系统选择 dmg 下载，windwos 系统选择 .exe 下载</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161917458.png"></p>
+<p>下载和安装过程都十分的简单，这里我们就不再赘述。安装好后，我们就正式开始！</p>
+<h2 id="三-Github配置"><a href="#三-Github配置" class="headerlink" title="三.Github配置"></a>三.Github配置</h2><h3 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h3><p>我们可以新建一个仓库或者使用已经有的库也可以。那么我新建一个库叫做 picgo。<img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161921527.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161931895.png"></p>
+<h3 id="创建Token"><a href="#创建Token" class="headerlink" title="创建Token"></a>创建Token</h3><p>创建好后，需要在 GitHub 上生成一个 token 以便 PicGo 来操作我们的仓库，来到个人中心，选择 Developer settings 就能看到 Personal access tokens_，我们在这里创建需要的 _token</p>
+<p>1.点击settings</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161939552.png" alt="屏幕截图(139)"></p>
+<p>2.点击Developer settings(开发者设置)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161939664.png" alt="屏幕截图(141)"></p>
+<p>3.点击Personal access tokens中的Tokens(classic),再点击Generate new token(classic)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307161943855.jpg" alt="屏幕截图(132)"></p>
+<p>4.&#x3D;&#x3D;选择 repo&#x3D;&#x3D;，同时它会把包含其中的都会勾选上，我们勾选这些就可以了。&#x3D;&#x3D;然后拉到最下方点击绿色按钮，Generate token 即可&#x3D;&#x3D;。之后就会生成一个 token ，&#x3D;&#x3D;记得复制保存到其他地方，这个 token 只显示一次！&#x3D;&#x3D;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162002848.png" alt="屏幕截图(143)"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162006888.png" alt="image"></p>
+<h2 id="四-Picgo配置"><a href="#四-Picgo配置" class="headerlink" title="四.Picgo配置"></a>四.Picgo配置</h2><h3 id="配置默认图床"><a href="#配置默认图床" class="headerlink" title="配置默认图床"></a>配置默认图床</h3><p>仓库名格式为 用户名&#x2F;仓库名<br>分支名：master<br>token：刚刚在 GitHub 创建的 token<br>然后点击确定，设为默认图床。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162025030.png" alt="image (2)"></p>
+<p>设定自定义域名：<code>https://cdn.jsdelivr.net/gh/[github用户名]/[仓库名]@main</code></p>
+<blockquote>
+<p>这里的域名采用的cdn加速，本应是<a href="https://raw.githubusercontent.com/[username]/[%E4%BB%93%E5%BA%93%E5%90%8D]">https://raw.githubusercontent.com/[username]/[仓库名]</a><br>可以直接复制上面的自定义域名，一般情况下没问题，如果出现问题就采用原本的域名，网络问题自己解决</p>
+</blockquote>
+<h2 id="五-建议和一些错误"><a href="#五-建议和一些错误" class="headerlink" title="五.建议和一些错误"></a>五.建议和一些错误</h2><p>建议打开设置里的按照时间戳重命名，防止图片名字重复可能导致的一些失败。顺便提供一些常见错误的解决办法。</p>
+<h3 id="错误：Failed-to-fetch"><a href="#错误：Failed-to-fetch" class="headerlink" title="错误：Failed to fetch"></a>错误：Failed to fetch</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162032275.png" alt="10001 (1)"></p>
+<p>这个错误一般是由端口设置错误造成的，打开 picgo 的 log 文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162033842.png"></p>
+<p>解决办法：打开 picgo 设置，点击设置代理选项，将端口改为 36677 端口，这是 picgo 推荐的默认端口号，然后保存，成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162034145.png"></p>
+<p>不过有的时候，设置好了后还是会报错 Failed to fetch，打开端口设置一看，端口变成了 366771，这是因为如果你打开了多个 picgo 程序，就会端口冲突，picgo 自动帮你把 36677 端口改为 366771 端口，导致错误。log 文件里也写得很清楚。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162035514.png"></p>
+<p>解决办法：先把 picgo 中的端口设置改回 36677，然后退出所有 picgo 程序，再使用 typora 上传功能（会自动启动 picgo 程序）<img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162035798.png"></p>
+<h3 id="错误：-“success”-false"><a href="#错误：-“success”-false" class="headerlink" title="错误：{“success”,false}"></a>错误：{“success”,false}</h3><p>这个错误是最常遇到的，第一个原因是文件名冲突了，如果你上传过一张 image1.jpg 的图片，再上传名称一样的图片就会失败。</p>
+<p>解决办法：打开 picgo 设置，将上传前重命名和时间戳重命名都打开。如图所示：</p>
+<p>再次上传文件，出现一个确认文件名称的对话框（暂时没有找到默认确定的选项），点击确定，上传成功。</p>
+<p>第二个原因，可能就是网络问题，显示服务端错误，这种情况下，可以更换默认图床，或者稍后再试。</p>
+<p>解决办法：更换默认图床或者多试几次，我经常遇到这种情况，在 github 上传失败的时候，我就把默认图床更改为 Gitee 上传到码云。</p>
+<p>第三个原因：使用了代理或者加速器</p>
+<h2 id="配置Typora"><a href="#配置Typora" class="headerlink" title="配置Typora"></a>配置Typora</h2><h3 id="打开Typora的设置"><a href="#打开Typora的设置" class="headerlink" title="打开Typora的设置"></a>打开Typora的设置</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162041744.png" alt="15dcdaa70f6e4fc69015f4f52cf30163"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162039586.png" alt="在这里插入图片描述"><br>配置完成后验证图片上传选项，如果看见<code>Failed to fetch</code>，别着急还有一个配置<br><img src="https://img-blog.csdnimg.cn/b37057b45dba48b7b25c4f792ca63706.png" alt="在这里插入图片描述"></p>
+<h3 id="设置picgo的监听端口号"><a href="#设置picgo的监听端口号" class="headerlink" title="设置picgo的监听端口号"></a>设置picgo的监听端口号</h3><p><img src="https://cdn.jsdelivr.net/gh/yoyiup/picgo@main/image/202307162039515.png" alt="在这里插入图片描述">设置成36677，再去typora验证一下</p>
+<p>看见验证成功就大功告成了！</p>
+]]></content>
+      <categories>
+        <category>博客优化</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test4</title>
+    <url>/undefined/%2052089/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>!!! note Hexo-admonition 插件使用示例 这是基于 hexo-admonition 插件渲染的一条提示信息。类型为 note，并设置了自定义标题。 提示内容开头留 4 个空格，可以有多行，最后用空行结束此标记。<br>!!! Warning “”<br>    这是一条不带标题的警告信息。</p>
+]]></content>
   </entry>
 </search>
