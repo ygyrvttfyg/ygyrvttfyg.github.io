@@ -1614,4 +1614,36 @@
         <tag>杂七杂八</tag>
       </tags>
   </entry>
+  <entry>
+    <title>一-函数与导数-3-7.合</title>
+    <url>/undefined/%201714698801/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一-函数与导数-3-8-xx"><a href="#一-函数与导数-3-8-xx" class="headerlink" title="一-函数与导数-3-8.xx"></a>一-函数与导数-3-8.xx</h1><h2 id="1-3分段函数"><a href="#1-3分段函数" class="headerlink" title="1.3分段函数"></a>1.3分段函数</h2><h3 id="1-最值问题"><a href="#1-最值问题" class="headerlink" title="1.最值问题"></a>1.最值问题</h3><h3 id="2-单调性求参"><a href="#2-单调性求参" class="headerlink" title="2.单调性求参"></a>2.单调性求参</h3><h3 id="3-动态分段点"><a href="#3-动态分段点" class="headerlink" title="3.动态分段点"></a>3.动态分段点</h3><h3 id="4-函数值问题"><a href="#4-函数值问题" class="headerlink" title="4.函数值问题"></a>4.函数值问题</h3><h2 id="1-4函数零点问题"><a href="#1-4函数零点问题" class="headerlink" title="1.4函数零点问题"></a>1.4函数零点问题</h2><h3 id="无参"><a href="#无参" class="headerlink" title="无参"></a>无参</h3><ul>
+<li>直接作图</li>
+<li>变量分离作图</li>
+</ul>
+<h3 id="含参"><a href="#含参" class="headerlink" title="含参"></a>含参</h3><ul>
+<li>参变全分离</li>
+<li>参变半分离</li>
+</ul>
+<h2 id="1-5复合函数问题：换元法"><a href="#1-5复合函数问题：换元法" class="headerlink" title="1.5复合函数问题：换元法"></a>1.5复合函数问题：换元法</h2><h2 id="1-6导数基础题型"><a href="#1-6导数基础题型" class="headerlink" title="1.6导数基础题型"></a>1.6导数基础题型</h2><h3 id="1-函数切线的计算"><a href="#1-函数切线的计算" class="headerlink" title="1.函数切线的计算"></a>1.函数切线的计算</h3><ul>
+<li>f’(x0)=k（导数值等于斜率）</li>
+<li>f(x0)=k(x-x0)+y0（切点在两线上）</li>
+</ul>
+<h3 id="2-求无参函数的单调区间，极值，最值"><a href="#2-求无参函数的单调区间，极值，最值" class="headerlink" title="2.求无参函数的单调区间，极值，最值"></a>2.求无参函数的单调区间，极值，最值</h3><h3 id="3-求有参函数的单调区间，极值，最值"><a href="#3-求有参函数的单调区间，极值，最值" class="headerlink" title="3.求有参函数的单调区间，极值，最值"></a>3.求有参函数的单调区间，极值，最值</h3><ul>
+<li>f’(x)无零点</li>
+<li><p>f’(x)有零点</p>
+<ul>
+<li>有一个零点</li>
+<li>有多个零点   &gt;&gt; 讨论零点大小</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-7不等式恒成立问题（数学结合，转化为交点问题）"><a href="#1-7不等式恒成立问题（数学结合，转化为交点问题）" class="headerlink" title="1.7不等式恒成立问题（数学结合，转化为交点问题）"></a>1.7不等式恒成立问题（数学结合，转化为交点问题）</h2><h3 id="1-参变全分离"><a href="#1-参变全分离" class="headerlink" title="1.参变全分离"></a>1.参变全分离</h3><h3 id="2-参变半分离：做图，切线端点"><a href="#2-参变半分离：做图，切线端点" class="headerlink" title="2.参变半分离：做图，切线端点"></a>2.参变半分离：做图，切线端点</h3>]]></content>
+      <categories>
+        <category>高考数学复习</category>
+      </categories>
+      <tags>
+        <tag>校本学习</tag>
+      </tags>
+  </entry>
 </search>
